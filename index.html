@@ -10,9 +10,7 @@
       <style>
             @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-            .body{
-                  margin: 0 auto;
-            }
+            
             .inter {
                   font-family: "Inter", sans-serif;
             }
@@ -67,21 +65,21 @@
 
             <!-- card section -->
             <section class="inter grid lg:grid-cols-3 lg:relative bottom-16 lg:mx-40">
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl">
+                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
                         <img src="images/people.png" alt="">
                         <div>
                               <h3 class="text-[#030712] text-4xl font-bold">500K+</h3>
                               <p class="text-[#03071299] text-xl">Registered users</p>
                         </div>
                   </div>
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl">
+                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
                         <img src="images/ticket-cupon.png" alt="">
                         <div>
                               <h3 class="text-[#030712] text-4xl font-bold">1.7 lacks</h3>
                               <p class="text-[#03071299] text-xl">Tickets sold</p>
                         </div>
                   </div>
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl">
+                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
                         <img src="images/stoppage.png" alt="">
                         <div>
                               <h3 class="text-[#030712] text-4xl font-bold">80K+</h3>
@@ -91,7 +89,45 @@
             </section>
 
       </header>
-      <main>
+      <main class="mx-auto container">
+            <!-- best offer section  -->
+            <section class="inter">
+                  <h1 class="text-4xl font-bold text-center pt-24">Best offers for you</h1>
+                  <div class="mt-10 lg:flex justify-center items-center gap-6 mb-6">
+                        <div class="flex lg:w-1/2 bg-[#FFBF0F] rounded-3xl p-10 mt-4">
+                              <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
+                                    <h1 class="text-4xl font-black">15% OFF</h1>
+                                    <p class="text-xl font-semibold">on your next purchase</p>
+                                    <p class="font-medium text-[#03071299]">use by January 2024</p>
+                              </div>
+
+                              
+                              <div class="w-4/12 text-center my-auto raleway">
+                                    <h2 class="text-xl font-medium">NEW15</h2>
+                                    <p class="font-medium text-[#03071299]">Coupon Code</p>
+
+                              </div>
+                        </div>
+                        <div class="flex lg:w-1/2 bg-[#F78C9C] rounded-3xl p-10 mt-4">
+                              <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
+                                    <h1 class="text-4xl font-black">20% OFF</h1>
+                                    <p class="text-xl font-semibold">on your next purchase</p>
+                                    <p class="font-medium text-[#03071299]">use by January 2024</p>
+                              </div>
+                              <div class="w-4/12 text-center my-auto raleway ">
+                                    <h2 class="text-xl font-medium">Couple 20</h2>
+                                    <p class="font-medium text-[#03071299]">Coupon Code</p>
+
+                              </div>
+                        </div>
+                        
+                        
+                  </div>
+                  <div class="w-full flex justify-center mt-16">
+                        <button class="btn text-[#1DD100] text-xl font-bold">See All Offers</button>
+                  </div>
+
+            </section>
 
       </main>
       <footer>
