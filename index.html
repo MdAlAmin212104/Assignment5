@@ -57,7 +57,7 @@
                           <div class="">
                             <h1 class="mb-5 text-xl lg:text-6xl font-extrabold leading-[86px]">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
                             <p class="mb-5 lg:text-xl">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-                            <button class="btn bg-[#1DD100] mx-5 border-none text-xl font-bold">Buy Tickets</button>
+                            <button class="btn bg-[#1DD100] mx-5 border-none text-xl font-bold"><a href="#paribahan">Buy Tickets</a></button>
                           </div>
                         </div>
                   </div>
@@ -130,7 +130,7 @@
             </section>
 
             <!-- Paribahan section -->
-            <section class="bg-[#F7F8F8] rounded-t-[88px]">
+            <section id="paribahan" class="bg-[#F7F8F8] rounded-t-[88px]">
                   <h1 class="raleway text-4xl font-bold text-center pt-32">P.H Paribahan</h1>
                   <p class="text-center pt-6 inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
 
@@ -146,7 +146,7 @@
                                           </div>
                                     </div>
                                     <div class="btn relative mr-6 bg-[#1dd10026]">
-                                          <button class="w-24 text-[#1DD100]"><span class=""> <img src="images/seat-green.png" alt="" class="absolute top-2 -left-1 ml-1">40 Seats left</span></button>
+                                          <button class="w-24 text-[#1DD100]"> <img src="images/seat-green.png" alt="" class="absolute top-2 -left-1 ml-1"> <span id="seat-left">40</span> Seats left</button>
                                           
                                     </div>
                               </div>
@@ -286,6 +286,7 @@
 
 
                         </div>
+
                         <hr class="hidden lg:flex w-[890px] rotate-90 border-dashed border-2 absolute top-[480px] left-[320px]">
                         <div class="lg:w-5/12 absolute top-[950px] lg:static lg:ml-10">
                               <h1 class="raleway pb-3">Select Your Seat</h1>
@@ -293,31 +294,23 @@
                               <div class="bg-[#F7F8F8] rounded-xl">
                                     <div class="mx-6">
                                           <div class="flex justify-between p-4 font-medium text-[#030712]">
-                                                <h2>Seat <span><sup>0</sup></span></h2>
+                                                <h2>Seat <span id="seat-count"><sup>0</sup></span></h2>
                                                 <p>Class</p>
                                                 <p>Price</p>
                                           </div>
                                           <hr class="border-dashed">
-                                          <div class="flex justify-between mt-4">
-                                                <h2>C2</h2>
-                                                <p>Economoy</p>
-                                                <p>550</p>
-                                          </div>
-                                          <div class="flex justify-between my-4">
-                                                <h2>C2</h2>
-                                                <p>Economoy</p>
-                                                <p>550</p>
+                                          <div id="seat-append">
                                           </div>
                                           <hr class="border-dashed pt-4">
                                           <div class="flex justify-between mb-6">
                                                 <h2>Total Price </h2>
-                                                <p>BDT <span>1100</span></p>
+                                                <p>BDT <span id="total-price">00</span></p>
                                           </div>
-                                          <input class="w-[150px] lg:w-[350px] p-[12px] rounded-xl border-none" type="text" placeholder="Have any copupon?">
-                                          <button class="btn bg-[#1DD100] text-white">Apply</button>
+                                          <input class="w-[150px] lg:w-[350px] p-[12px] rounded-xl border-none" id="input-field" type="text" placeholder="Have any coupon?">
+                                          <button id="coupon-apply" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
                                           <div class="flex justify-between my-5 pb-10">
                                                 <h2>Grand Total</h2>
-                                                <p>BDT<span>1100</span></p>
+                                                <p>BDT<span id="grand-total">00</span></p>
                                           </div>
                                     </div>
                               </div>
@@ -327,7 +320,7 @@
                               <input class="w-full p-3 rounded-xl" type="number" placeholder="Enter your number">
                               <h1 class="font-semibold py-5">Email ID</h1>
                               <input class="w-full p-3 rounded-xl border-solid" type="email" placeholder="Enter your email">
-                              <button class="btn w-full mt-5 bg-[#1DD100] text-white">Next</button>
+                              <button class="btn w-full mt-5 bg-[#1DD100] text-white" disabled>Next</button>
 
                               <div class="flex justify-between mt-5">
                                     <p>Terms and Conditions</p>
@@ -369,6 +362,9 @@
                 
 
       </footer>
+
+
+      <script src="java.js"></script>
       
 </body>
 </html>
