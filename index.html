@@ -20,348 +20,357 @@
       </style>
 </head>
 <body>
-      <header class="container raleway mx-auto">
-            <div class="navbar bg-base-100 my-10">
-                  <div class="navbar-start">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                      </div>
-                      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl font-medium text-[#030712b3]">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Destination</a></li>
-                        <li><a>Search</a></li>
-                      </ul>
-                    </div>
-                    <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
-                  </div>
-                  <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1  text-xl font-medium text-[#030712b3]">
-                      <li><a>Home</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Destination</a></li>
-                      <li><a>Search</a></li>
-                    </ul>
-                  </div>
-                  <div class="navbar-end">
-                    <a class="btn text-[#1DD100] bg-[#1dd1001a]">Bus <img src="images/bus-icon.png" alt=""></a>
-                  </div>
-            </div>
-
-            <!-- hero section -->
-            <section class="">
-                  <div class="hero min-h-screen rounded-[32px]" style="background-image: url(images/banner.png);">
-                        <div class="hero-overlay bg-transparent"></div>
-                        <div class="hero-content text-center text-neutral-content">
-                          <div class="">
-                            <h1 class="mb-5 text-xl lg:text-6xl font-extrabold leading-[86px]">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
-                            <p class="mb-5 lg:text-xl">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
-                            <button class="btn bg-[#1DD100] mx-5 border-none text-xl font-bold"><a href="#paribahan">Buy Tickets</a></button>
+      <div id="success" class="text-center mt-60 hidden">
+            <img src="images/success.png" alt="" class="mx-auto">
+            <h4 class="text-2xl font-bold text-[#27AE60] pt-6">SUCCESS</h4>
+            <p class="text-xl font-medium pt-6">Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you. 
+            <p class="text-xl">Shortly you will find a confirmation in your email.</p>
+            <button class="bg-[#27AE60] btn w-52 rounded-3xl text-xl font-semibold text-white mt-6" onclick="nextStep()">Continue</button>
+      </div>
+      <div id="header">
+            <header class="container raleway mx-auto">
+                  <div class="navbar bg-base-100 my-10">
+                        <div class="navbar-start">
+                          <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-xl font-medium text-[#030712b3]">
+                              <li><a>Home</a></li>
+                              <li><a>About</a></li>
+                              <li><a>Destination</a></li>
+                              <li><a>Search</a></li>
+                            </ul>
                           </div>
+                          <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+                        </div>
+                        <div class="navbar-center hidden lg:flex">
+                          <ul class="menu menu-horizontal px-1  text-xl font-medium text-[#030712b3]">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                          </ul>
+                        </div>
+                        <div class="navbar-end">
+                          <a class="btn text-[#1DD100] bg-[#1dd1001a]">Bus <img src="images/bus-icon.png" alt=""></a>
                         </div>
                   </div>
-            </section>
-
-            <!-- card section -->
-            <section class="inter grid lg:grid-cols-3 lg:relative bottom-16 lg:mx-40">
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
-                        <img src="images/people.png" alt="">
-                        <div>
-                              <h3 class="text-[#030712] text-4xl font-bold">500K+</h3>
-                              <p class="text-[#03071299] text-xl">Registered users</p>
-                        </div>
-                  </div>
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
-                        <img src="images/ticket-cupon.png" alt="">
-                        <div>
-                              <h3 class="text-[#030712] text-4xl font-bold">1.7 lacks</h3>
-                              <p class="text-[#03071299] text-xl">Tickets sold</p>
-                        </div>
-                  </div>
-                  <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
-                        <img src="images/stoppage.png" alt="">
-                        <div>
-                              <h3 class="text-[#030712] text-4xl font-bold">80K+</h3>
-                              <p class="text-[#03071299] text-xl">Rental partners</p>
-                        </div>
-                  </div>
-            </section>
-
-      </header>
-      <main>
-            <!-- best offer section  -->
-            <section class="inter mb-32 container mx-auto">
-                  <h1 class="text-4xl font-bold text-center pt-24">Best offers for you</h1>
-                  <div class="mt-10 lg:flex justify-center items-center gap-6 mb-6">
-                        <div class="flex lg:w-1/2 bg-[#FFBF0F] rounded-3xl p-10 mt-4">
-                              <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
-                                    <h1 class="text-4xl font-black">15% OFF</h1>
-                                    <p class="text-xl font-semibold">on your next purchase</p>
-                                    <p class="font-medium text-[#03071299]">use by January 2024</p>
+      
+                  <!-- hero section -->
+                  <section class="">
+                        <div class="hero min-h-screen rounded-[32px]" style="background-image: url(images/banner.png);">
+                              <div class="hero-overlay bg-transparent"></div>
+                              <div class="hero-content text-center text-neutral-content">
+                                <div class="">
+                                  <h1 class="mb-5 text-xl lg:text-6xl font-extrabold leading-[86px]">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                                  <p class="mb-5 lg:text-xl">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                                  <button class="btn bg-[#1DD100] mx-5 border-none text-xl font-bold"><a href="#paribahan">Buy Tickets</a></button>
+                                </div>
                               </div>
-
+                        </div>
+                  </section>
+      
+                  <!-- card section -->
+                  <section class="inter grid lg:grid-cols-3 lg:relative bottom-16 lg:mx-40">
+                        <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
+                              <img src="images/people.png" alt="">
+                              <div>
+                                    <h3 class="text-[#030712] text-4xl font-bold">500K+</h3>
+                                    <p class="text-[#03071299] text-xl">Registered users</p>
+                              </div>
+                        </div>
+                        <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
+                              <img src="images/ticket-cupon.png" alt="">
+                              <div>
+                                    <h3 class="text-[#030712] text-4xl font-bold">1.7 lacks</h3>
+                                    <p class="text-[#03071299] text-xl">Tickets sold</p>
+                              </div>
+                        </div>
+                        <div class="flex w-[300px] h-[130px] mx-auto justify-center items-center gap-3 bg-white rounded-3xl border-b-4 border-[#1dd100]">
+                              <img src="images/stoppage.png" alt="">
+                              <div>
+                                    <h3 class="text-[#030712] text-4xl font-bold">80K+</h3>
+                                    <p class="text-[#03071299] text-xl">Rental partners</p>
+                              </div>
+                        </div>
+                  </section>
+      
+            </header>
+            <main>
+                  <!-- best offer section  -->
+                  <section class="inter mb-32 container mx-auto">
+                        <h1 class="text-4xl font-bold text-center pt-24">Best offers for you</h1>
+                        <div class="mt-10 lg:flex justify-center items-center gap-6 mb-6">
+                              <div class="flex lg:w-1/2 bg-[#FFBF0F] rounded-3xl p-10 mt-4">
+                                    <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
+                                          <h1 class="text-4xl font-black">15% OFF</h1>
+                                          <p class="text-xl font-semibold">on your next purchase</p>
+                                          <p class="font-medium text-[#03071299]">use by January 2024</p>
+                                    </div>
+      
+                                    
+                                    <div class="w-4/12 text-center my-auto raleway">
+                                          <h2 class="text-xl font-medium">NEW15</h2>
+                                          <p class="font-medium text-[#03071299]">Coupon Code</p>
+      
+                                    </div>
+                              </div>
+                              <div class="flex lg:w-1/2 bg-[#F78C9C] rounded-3xl p-10 mt-4">
+                                    <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
+                                          <h1 class="text-4xl font-black">20% OFF</h1>
+                                          <p class="text-xl font-semibold">on your next purchase</p>
+                                          <p class="font-medium text-[#03071299]">use by January 2024</p>
+                                    </div>
+                                    <div class="w-4/12 text-center my-auto raleway ">
+                                          <h2 class="text-xl font-medium">Couple 20</h2>
+                                          <p class="font-medium text-[#03071299]">Coupon Code</p>
+      
+                                    </div>
+                              </div>
                               
-                              <div class="w-4/12 text-center my-auto raleway">
-                                    <h2 class="text-xl font-medium">NEW15</h2>
-                                    <p class="font-medium text-[#03071299]">Coupon Code</p>
-
-                              </div>
+                              
                         </div>
-                        <div class="flex lg:w-1/2 bg-[#F78C9C] rounded-3xl p-10 mt-4">
-                              <div class="w-8/12 text-center my-auto border-r-2 border-dotted">
-                                    <h1 class="text-4xl font-black">20% OFF</h1>
-                                    <p class="text-xl font-semibold">on your next purchase</p>
-                                    <p class="font-medium text-[#03071299]">use by January 2024</p>
-                              </div>
-                              <div class="w-4/12 text-center my-auto raleway ">
-                                    <h2 class="text-xl font-medium">Couple 20</h2>
-                                    <p class="font-medium text-[#03071299]">Coupon Code</p>
-
-                              </div>
+                        <div class="w-full flex justify-center mt-16">
+                              <button class="btn text-[#1DD100] text-xl font-bold">See All Offers</button>
                         </div>
-                        
-                        
-                  </div>
-                  <div class="w-full flex justify-center mt-16">
-                        <button class="btn text-[#1DD100] text-xl font-bold">See All Offers</button>
-                  </div>
-
-            </section>
-
-            <!-- Paribahan section -->
-            <section id="paribahan" class="bg-[#F7F8F8] rounded-t-[88px]">
-                  <h1 class="raleway text-4xl font-bold text-center pt-32">P.H Paribahan</h1>
-                  <p class="text-center pt-6 inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
-
-                  <!-- greenLine poribahan section -->
-                  <section class="lg:flex justify-between mt-12 bg-[#FFFFFF] container mx-auto p-8 rounded-3xl gap-8">
-                        <div class="lg:w-9/12">
-                              <div class="lg:flex justify-between">
-                                    <div class="flex gap-2">
-                                          <img src="images/bus-logo.png" alt="">
-                                          <div class="w-96">
-                                                <h2 class="raleway text-3xl font-bold ">Greenline Paribahan</h2>
-                                                <p class="pt-3">Coach-009-WEB ! AC_Business</p>
-                                          </div>
-                                    </div>
-                                    <div class="btn relative mr-6 bg-[#1dd10026]">
-                                          <button class="w-24 text-[#1DD100]"> <img src="images/seat-green.png" alt="" class="absolute top-2 -left-1 ml-1"> <span id="seat-left">40</span> Seats left</button>
-                                          
-                                    </div>
-                              </div>
-                              <div class="bg-[#F7F8F8] mt-6 p-6 rounded-3xl raleway">
-                                    <div class="lg:flex justify-between m-8">
-                                          <h3>Route</h3>
-                                          <p class="font-semibold text-xl">Dhaka - Sylhet</p>
-                                    </div>
-                                    <hr class="border-dashed border-[#03071233] mx-10">
-                                    <div class="lg:flex justify-between m-8">
-                                          <h3>Departure Time</h3>
-                                          <p class="font-semibold text-xl">9:00 PM</p>
-                                    </div>
-                                    <hr class="border-dashed border-[#03071233] mx-10">
-                                    <div class="lg:flex justify-between m-8 inter">
-                                          <button class="btn">Boarding Point - Laxmipur</button>
-                                          <button class="btn">Dropping Point - Bogura</button>
-                                          <button class="btn">Est. Time - 11 Hour</button>
-                                    </div>
-                              </div>
-                        </div>
-                        <hr class="hidden lg:flex absolute w-[350px] bg-[#1DD100] origin-top-left rotate-90 right-10 border-dashed border-2 top-[2000px]">
-                       
-                        
-                        <div class="lg:w-3/12 m-auto text-center raleway font-semibold">
-                              <img src="images/fare.png" alt="" class="mx-auto">
-                              <h5 class="text-4xl font-bold">550 Taka</h5>
-                              <p class="text-2xl">Per Seat</p>
-
-                        </div>
+      
                   </section>
-
-                  <!-- seat section  -->
-
-                  <section class="container mx-auto mt-7 lg:flex lg:justify-between inter gap-12 bg-white p-5 rounded-3xl lg:h-[1000px] relative">
-                        <div class="lg:w-7/12">
-                              <h1 class="raleway pb-3">Select Your Seat</h1>
-                              <hr class="border-dashed border-[#03071233]">
-                              <div class="flex justify-between my-2">
-                                    <h4 class="">Available<img src="images/seat-gray.png" alt="" class="float-left"></h4>
-                                    <h4>Selected<img src="images/seat-green-filled.png" alt="" class="float-left"></h4>
-                              </div>
-                              <hr class="border-dashed border-[#03071233]">
-                              <div class="absolute top-[100px]">
-                                    <kbd class="kbd hidden lg:flex absolute left-[605px] top-[30px] lg:w-[100px] lg:h-[50px]"><img src="images/steering.svg" alt="" class="w-6"></kbd>
-                                    <div class="absolute top-24">
-                                          <p class="absolute top-2 text-xl font-medium">A</p>
-                                          <div class="absolute  flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A1</kbd>
-                                                <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A2</kbd>
-                                                <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A3</kbd>
-                                                <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A4</kbd>
+      
+                  <!-- Paribahan section -->
+                  <section id="paribahan" class="bg-[#F7F8F8] rounded-t-[88px]">
+                        <h1 class="raleway text-4xl font-bold text-center pt-32">P.H Paribahan</h1>
+                        <p class="text-center pt-6 inter">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+      
+                        <!-- greenLine poribahan section -->
+                        <section class="lg:flex justify-between mt-12 bg-[#FFFFFF] container mx-auto p-8 rounded-3xl gap-8">
+                              <div class="lg:w-9/12">
+                                    <div class="lg:flex justify-between">
+                                          <div class="flex gap-2">
+                                                <img src="images/bus-logo.png" alt="">
+                                                <div class="w-96">
+                                                      <h2 class="raleway text-3xl font-bold ">Greenline Paribahan</h2>
+                                                      <p class="pt-3">Coach-009-WEB ! AC_Business</p>
+                                                </div>
+                                          </div>
+                                          <div class="btn relative mr-6 bg-[#1dd10026]">
+                                                <button class="w-24 text-[#1DD100]"> <img src="images/seat-green.png" alt="" class="absolute top-2 -left-1 ml-1"> <span id="seat-left">40</span> Seats left</button>
+                                                
                                           </div>
                                     </div>
-                                    <div class="absolute top-[160px]">
-                                          <p class="absolute top-2 text-xl font-medium">B</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">B1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">B2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">B3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">B4</kbd>
+                                    <div class="bg-[#F7F8F8] mt-6 p-6 rounded-3xl raleway">
+                                          <div class="lg:flex justify-between m-8">
+                                                <h3>Route</h3>
+                                                <p class="font-semibold text-xl">Dhaka - Sylhet</p>
                                           </div>
-                                    </div>
-                                    <div class="absolute top-[230px]">
-                                          <p class="absolute top-2 text-xl font-medium">C</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">C1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">C2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">C3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">C4</kbd>
+                                          <hr class="border-dashed border-[#03071233] mx-10">
+                                          <div class="lg:flex justify-between m-8">
+                                                <h3>Departure Time</h3>
+                                                <p class="font-semibold text-xl">9:00 PM</p>
                                           </div>
-                                    </div>
-                                    <div class="absolute top-[300px]">
-                                          <p class="absolute top-2 text-xl font-medium">D</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">D1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">D2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">D3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">D4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[370px]">
-                                          <p class="absolute top-2 text-xl font-medium">E</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">E1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">E2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">E3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">E4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[440px]">
-                                          <p class="absolute top-2 text-xl font-medium">F</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">F1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">F2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">F3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">F4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[510px]">
-                                          <p class="absolute top-2 text-xl font-medium">G</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">G1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">G2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">G3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">G4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[580px]">
-                                          <p class="absolute top-2 text-xl font-medium">H</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">H1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">H2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">H3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">H4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[650px]">
-                                          <p class="absolute top-2 text-xl font-medium">I</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">I1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">I2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">I3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">I4</kbd>
-                                          </div>
-                                    </div>
-                                    <div class="absolute top-[730px]">
-                                          <p class="absolute top-2 text-xl font-medium">J</p>
-                                          <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">J1</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">J2</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">J3</kbd>
-                                                <kbd class="kbd lg:w-[100px] lg:h-[50px]">J4</kbd>
+                                          <hr class="border-dashed border-[#03071233] mx-10">
+                                          <div class="lg:flex justify-between m-8 inter">
+                                                <button class="btn">Boarding Point - Laxmipur</button>
+                                                <button class="btn">Dropping Point - Bogura</button>
+                                                <button class="btn">Est. Time - 11 Hour</button>
                                           </div>
                                     </div>
                               </div>
-
-
-                        </div>
-
-                        <hr class="hidden lg:flex w-[890px] rotate-90 border-dashed border-2 absolute top-[480px] left-[320px]">
-                        <div class="lg:w-5/12 absolute top-[950px] lg:static lg:ml-10">
-                              <h1 class="raleway pb-3">Select Your Seat</h1>
-                              <hr class="border-dashed border-[#03071233] mb-6">
-                              <div class="bg-[#F7F8F8] rounded-xl">
-                                    <div class="mx-6">
-                                          <div class="flex justify-between p-4 font-medium text-[#030712]">
-                                                <h2>Seat <span id="seat-count"><sup>0</sup></span></h2>
-                                                <p>Class</p>
-                                                <p>Price</p>
+                              <hr class="hidden lg:flex absolute w-[350px] bg-[#1DD100] origin-top-left rotate-90 right-10 border-dashed border-2 top-[2000px]">
+                             
+                              
+                              <div class="lg:w-3/12 m-auto text-center raleway font-semibold">
+                                    <img src="images/fare.png" alt="" class="mx-auto">
+                                    <h5 class="text-4xl font-bold">550 Taka</h5>
+                                    <p class="text-2xl">Per Seat</p>
+      
+                              </div>
+                        </section>
+      
+                        <!-- seat section  -->
+      
+                        <section class="container mx-auto mt-7 lg:flex lg:justify-between inter gap-12 bg-white p-5 rounded-3xl lg:h-[1000px] relative">
+                              <div class="lg:w-7/12">
+                                    <h1 class="raleway pb-3">Select Your Seat</h1>
+                                    <hr class="border-dashed border-[#03071233]">
+                                    <div class="flex justify-between my-2">
+                                          <h4 class="">Available<img src="images/seat-gray.png" alt="" class="float-left"></h4>
+                                          <h4>Selected<img src="images/seat-green-filled.png" alt="" class="float-left"></h4>
+                                    </div>
+                                    <hr class="border-dashed border-[#03071233]">
+                                    <div class="absolute top-[100px]">
+                                          <kbd class="kbd hidden lg:flex absolute left-[605px] top-[30px] lg:w-[100px] lg:h-[50px]"><img src="images/steering.svg" alt="" class="w-6"></kbd>
+                                          <div class="absolute top-24">
+                                                <p class="absolute top-2 text-xl font-medium">A</p>
+                                                <div class="absolute  flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A1</kbd>
+                                                      <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A2</kbd>
+                                                      <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A3</kbd>
+                                                      <kbd class="kbd lg:lg:w-[100px] lg:lg:h-[50px]">A4</kbd>
+                                                </div>
                                           </div>
-                                          <hr class="border-dashed">
-                                          <div id="seat-append">
+                                          <div class="absolute top-[160px]">
+                                                <p class="absolute top-2 text-xl font-medium">B</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">B1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">B2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">B3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">B4</kbd>
+                                                </div>
                                           </div>
-                                          <hr class="border-dashed pt-4">
-                                          <div class="flex justify-between mb-6">
-                                                <h2>Total Price </h2>
-                                                <p>BDT <span id="total-price">00</span></p>
+                                          <div class="absolute top-[230px]">
+                                                <p class="absolute top-2 text-xl font-medium">C</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">C1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">C2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">C3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">C4</kbd>
+                                                </div>
                                           </div>
-                                          <input class="w-[150px] lg:w-[350px] p-[12px] rounded-xl border-none" id="input-field" type="text" placeholder="Have any coupon?">
-                                          <button id="coupon-apply" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
-                                          <div class="flex justify-between my-5 pb-10">
-                                                <h2>Grand Total</h2>
-                                                <p>BDT<span id="grand-total">00</span></p>
+                                          <div class="absolute top-[300px]">
+                                                <p class="absolute top-2 text-xl font-medium">D</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">D1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">D2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">D3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">D4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[370px]">
+                                                <p class="absolute top-2 text-xl font-medium">E</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">E1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">E2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">E3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">E4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[440px]">
+                                                <p class="absolute top-2 text-xl font-medium">F</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">F1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">F2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">F3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">F4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[510px]">
+                                                <p class="absolute top-2 text-xl font-medium">G</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">G1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">G2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">G3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">G4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[580px]">
+                                                <p class="absolute top-2 text-xl font-medium">H</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">H1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">H2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">H3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">H4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[650px]">
+                                                <p class="absolute top-2 text-xl font-medium">I</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">I1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">I2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">I3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">I4</kbd>
+                                                </div>
+                                          </div>
+                                          <div class="absolute top-[730px]">
+                                                <p class="absolute top-2 text-xl font-medium">J</p>
+                                                <div class="absolute flex gap-6 lg:justify-between w-[650px] ml-14">
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">J1</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">J2</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">J3</kbd>
+                                                      <kbd class="kbd lg:w-[100px] lg:h-[50px]">J4</kbd>
+                                                </div>
                                           </div>
                                     </div>
+      
+      
                               </div>
-                              <h1 class="font-semibold pb-5">Passenger Name*</h1>
-                              <input class="w-full p-3 rounded-xl" type="text" placeholder="Enter your name">
-                              <h1 class="font-semibold py-5">Phone Number*</h1>
-                              <input class="w-full p-3 rounded-xl" type="number" placeholder="Enter your number">
-                              <h1 class="font-semibold py-5">Email ID</h1>
-                              <input class="w-full p-3 rounded-xl border-solid" type="email" placeholder="Enter your email">
-                              <button class="btn w-full mt-5 bg-[#1DD100] text-white" disabled>Next</button>
-
-                              <div class="flex justify-between mt-5">
-                                    <p>Terms and Conditions</p>
-                                    <p>Cancellation Policy</p>
+      
+                              <hr class="hidden lg:flex w-[890px] rotate-90 border-dashed border-2 absolute top-[480px] left-[320px]">
+                              <div class="lg:w-5/12 absolute top-[950px] lg:static lg:ml-10">
+                                    <h1 class="raleway pb-3">Select Your Seat</h1>
+                                    <hr class="border-dashed border-[#03071233] mb-6">
+                                    <div class="bg-[#F7F8F8] rounded-xl">
+                                          <div class="mx-6">
+                                                <div class="flex justify-between p-4 font-medium text-[#030712]">
+                                                      <h2>Seat <span id="seat-count"><sup>0</sup></span></h2>
+                                                      <p>Class</p>
+                                                      <p>Price</p>
+                                                </div>
+                                                <hr class="border-dashed">
+                                                <div id="seat-append">
+                                                </div>
+                                                <hr class="border-dashed pt-4">
+                                                <div class="flex justify-between mb-6">
+                                                      <h2>Total Price </h2>
+                                                      <p>BDT <span id="total-price">00</span></p>
+                                                </div>
+                                                <input class="w-[150px] lg:w-[350px] p-[12px] rounded-xl border-none" id="input-field" type="text" placeholder="Have any coupon?">
+                                                <button id="coupon-apply" class="btn bg-[#1DD100] text-white" disabled>Apply</button>
+                                                <div class="flex justify-between my-5 pb-10">
+                                                      <h2>Grand Total</h2>
+                                                      <p>BDT<span id="grand-total">00</span></p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <h1 class="font-semibold pb-5">Passenger Name*</h1>
+                                    <input class="w-full p-3 rounded-xl" type="text" placeholder="Enter your name">
+                                    <h1 class="font-semibold py-5">Phone Number*</h1>
+                                    <input class="w-full p-3 rounded-xl" id="number" type="number" placeholder="Enter your number">
+                                    <h1 class="font-semibold py-5">Email ID</h1>
+                                    <input class="w-full p-3 rounded-xl border-solid" type="email" placeholder="Enter your email">
+                                    <button id="nextBtn" class="btn w-full mt-5 bg-[#1DD100] text-white" disabled onclick="next()">Next</button>
+      
+                                    <div class="flex justify-between mt-5">
+                                          <p>Terms and Conditions</p>
+                                          <p>Cancellation Policy</p>
+                                    </div>
+      
                               </div>
-
-                        </div>
-                        
+                              
+                        </section>
+      
                   </section>
-
-            </section>
-
-            
-
-      </main>
-      <footer>
-            <footer class="mt-[1800px] lg:mt-0 footer p-10 bg-black text-white container mx-auto ">
-                  <nav>
-                    <h6 class="footer-title">Services</h6> 
-                    <a class="link link-hover">Branding</a>
-                    <a class="link link-hover">Design</a>
-                    <a class="link link-hover">Marketing</a>
-                    <a class="link link-hover">Advertisement</a>
-                  </nav> 
-                  <nav>
-                    <h6 class="footer-title">Company</h6> 
-                    <a class="link link-hover">About us</a>
-                    <a class="link link-hover">Contact</a>
-                    <a class="link link-hover">Jobs</a>
-                    <a class="link link-hover">Press kit</a>
-                  </nav> 
-                  <nav>
-                    <h6 class="footer-title">Legal</h6> 
-                    <a class="link link-hover">Terms of use</a>
-                    <a class="link link-hover">Privacy policy</a>
-                    <a class="link link-hover">Cookie policy</a>
-                  </nav>
-                </footer> 
-                
-
-      </footer>
+      
+                  
+      
+            </main>
+            <footer>
+                  <footer class="mt-[1800px] lg:mt-0 footer p-10 bg-black text-white container mx-auto ">
+                        <nav>
+                          <h6 class="footer-title">Services</h6> 
+                          <a class="link link-hover">Branding</a>
+                          <a class="link link-hover">Design</a>
+                          <a class="link link-hover">Marketing</a>
+                          <a class="link link-hover">Advertisement</a>
+                        </nav> 
+                        <nav>
+                          <h6 class="footer-title">Company</h6> 
+                          <a class="link link-hover">About us</a>
+                          <a class="link link-hover">Contact</a>
+                          <a class="link link-hover">Jobs</a>
+                          <a class="link link-hover">Press kit</a>
+                        </nav> 
+                        <nav>
+                          <h6 class="footer-title">Legal</h6> 
+                          <a class="link link-hover">Terms of use</a>
+                          <a class="link link-hover">Privacy policy</a>
+                          <a class="link link-hover">Cookie policy</a>
+                        </nav>
+                      </footer> 
+                      
+      
+            </footer>
+      </div>
 
 
       <script src="java.js"></script>

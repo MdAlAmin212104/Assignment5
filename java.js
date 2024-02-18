@@ -4,16 +4,31 @@ let price = 0;
 const seats = document.querySelectorAll('.kbd');
 let seatNumber = document.getElementById('seat-count').innerText;
 let couponCode = document.getElementById('coupon-apply');
+const numberElements = document.getElementById('number');
+const nextBtn = document.getElementById('nextBtn');
+
+function hiddenElementById(elementId){
+      const element = document.getElementById(elementId);
+      element.classList.add('hidden');
+
+}
+function showElementById(elementId){
+      const element = document.getElementById(elementId);
+      element.classList.remove('hidden');
+}
+
+function next (){
+      hiddenElementById('header');
+      showElementById('success');
+}
+
+function nextStep(){
+      showElementById('header');
+      hiddenElementById('success');
+
+}
 
 
-// inputValue.addEventListener('keyup', function(event){
-//       console.log(event.target.value);
-//       const text = event.target.value.toUpperCase();
-//       if(NEW15 === text){
-//             console.log("you got discount");
-//       }
-
-// })
 
 for (const seat of seats) {
       seat.addEventListener('click', function(event) {
@@ -45,6 +60,8 @@ for (const seat of seats) {
                   couponCode.disabled = false;
             }
              
+
+            // if(seatCount == 1 && )
             
             
             // click and backgroundColor apply
@@ -72,6 +89,17 @@ for (const seat of seats) {
 
             h2.innerText = seat.innerText;
             console.log(seatCount);
+
+
+            numberElements.addEventListener('keyup', function(event){
+                  const element = event.target.value.length;
+                  
+                  if(seatCount > 0 && element === 11 ){
+                        nextBtn.disabled = false;
+      
+                  }
+            })
+
       }
 
       // Remove event listener after first click
@@ -107,3 +135,4 @@ couponCode.addEventListener("click", function(){
 function setInnerText(id, value) {
       document.getElementById(id).innerText = value;
 }
+
