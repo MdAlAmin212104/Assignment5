@@ -86,7 +86,11 @@ for (const seat of seats) {
                   seatCount += 1;
                   seatAvailable -= 1;
                   
-            // seat price here
+                  if(seatCount >=5){
+                        alert("You can't buy more seat!");
+                        return;
+                  }
+                  // seat price here
             price = seatCount * 550;
             setInnerText('total-price', price);  
             setInnerText('grand-total', price);    
@@ -96,10 +100,6 @@ for (const seat of seats) {
             //seat count logic
 
 
-            if(seatCount >=5){
-                  alert("You can't buy more seat!");
-                  return;
-            }
             setInnerText('seat-count', seatCount);
             setInnerText('seat-left', seatAvailable);
 
